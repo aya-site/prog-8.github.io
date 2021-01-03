@@ -1,0 +1,618 @@
+@charset "UTF-8";
+/* Scss Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #7f5d29;
+  min-height: 100%;
+  width: 100%;
+  line-height: 1.8;
+  letter-spacing: .2em;
+  font-size: 2rem; }
+
+* {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+.center {
+  text-align: center; }
+
+.pc_disnone {
+  display: none; }
+
+.sp_disnone {
+  display: block; }
+
+.js--fade {
+  opacity: 0;
+  transform: translate(0, 50px);
+  transition: all 1s; }
+
+.js--fade.is--fade {
+  opacity: 1;
+  transform: translate(0, 0); }
+
+@media screen and (max-width: 768px) {
+  .inner {
+    width: 100%;
+    margin: auto; }
+
+  .pc_disnone {
+    display: block; }
+
+  .sp_disnone {
+    display: none; } }
+/********common********/
+h2 {
+  text-align: center; }
+
+/********main********/
+header {
+  position: relative;
+  margin-bottom: 80px; }
+  header h1 {
+    position: absolute;
+    top: 1%;
+    left: 1%; }
+  header .fv_price {
+    max-width: 90%;
+    margin: auto;
+    margin-top: -6%;
+    background-color: rgba(235, 233, 229, 0.5);
+    line-height: 0;
+    text-align: center; }
+
+#reason {
+  position: relative;
+  text-align: center;
+  margin-bottom: 90px; }
+  #reason h2 {
+    margin-bottom: 50px; }
+  #reason .reason_txt1 {
+    width: 100%;
+    font-size: 30px;
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); }
+  #reason .reason_txt2 {
+    font-size: 50px;
+    font-size: 5rem; }
+
+#intoro h2 {
+  text-align: center;
+  margin-bottom: 50px; }
+#intoro .intoro_wrap {
+  padding-top: 200px;
+  padding-bottom: 150px; }
+  #intoro .intoro_wrap .intoro_box {
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5%; }
+    #intoro .intoro_wrap .intoro_box .intoro_num {
+      position: absolute;
+      top: -130px;
+      left: -160px; }
+    #intoro .intoro_wrap .intoro_box h3 {
+      font-size: 40px;
+      font-size: 4rem;
+      margin-bottom: 40px; }
+      #intoro .intoro_wrap .intoro_box h3 span {
+        font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+        font-size: 80px;
+        font-size: 8rem;
+        display: block; }
+    #intoro .intoro_wrap .intoro_box p {
+      font-size: 26px;
+      font-size: 2.6rem; }
+  #intoro .intoro_wrap:first-of-type {
+    background: url("../img/step_bg01.jpg") no-repeat;
+    background-size: cover;
+    background-position: center; }
+  #intoro .intoro_wrap:nth-of-type(2) {
+    background: url("../img/step_bg02.jpg") no-repeat;
+    background-size: cover;
+    background-position: center; }
+    #intoro .intoro_wrap:nth-of-type(2) .intoro_box {
+      margin-left: inherit;
+      margin-right: auto; }
+      #intoro .intoro_wrap:nth-of-type(2) .intoro_box .intoro_num {
+        left: inherit;
+        right: -160px; }
+  #intoro .intoro_wrap:last-of-type {
+    background: url("../img/step_bg03.jpg") no-repeat;
+    background-size: cover;
+    background-position: center; }
+
+.price {
+  background-color: rgba(235, 233, 229, 0.5); }
+  .price .price_img {
+    max-width: 90%;
+    text-align: center;
+    margin: auto;
+    margin-top: -130px;
+    padding-bottom: 100px; }
+
+#step {
+  background-color: #e4bf96;
+  padding: 75px 0; }
+  #step h2 {
+    margin-bottom: 60px; }
+  #step .step_box {
+    width: 1600px;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between; }
+    #step .step_box figure {
+      width: 47%; }
+    #step .step_box .step_txt {
+      width: 49%;
+      color: #fff; }
+      #step .step_box .step_txt h3 {
+        font-size: 50px;
+        font-size: 5rem;
+        margin-bottom: 30px;
+        line-height: 1.6; }
+      #step .step_box .step_txt p {
+        font-size: 26px;
+        font-size: 2.6rem; }
+  #step .step_info {
+    width: 1400px;
+    max-width: 90%;
+    border: 10px solid #dcdcdc;
+    color: #fff;
+    font-size: 40px;
+    font-size: 4rem;
+    margin: 20px auto 0;
+    text-align: center;
+    padding: 30px 0;
+    position: relative; }
+    #step .step_info::after {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 50px 50px 0 50px;
+      border-color: #dcdcdc transparent transparent transparent; }
+
+#only {
+  padding: 150px 0 0; }
+  #only h2 {
+    color: #000;
+    font-size: 30px;
+    font-size: 3rem;
+    margin-bottom: 50px; }
+
+#hissu h2 {
+  margin-bottom: 30px; }
+#hissu .hissu_wrap {
+  padding-top: 200px;
+  padding-bottom: 150px; }
+  #hissu .hissu_wrap .hissu_box {
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5%; }
+    #hissu .hissu_wrap .hissu_box .hissu_num {
+      position: absolute;
+      top: -140px;
+      left: -160px; }
+    #hissu .hissu_wrap .hissu_box h3 {
+      font-size: 40px;
+      font-size: 4rem;
+      margin-bottom: 40px; }
+      #hissu .hissu_wrap .hissu_box h3 span {
+        font-size: 70px;
+        font-size: 7rem;
+        display: block;
+        line-height: 1.2; }
+    #hissu .hissu_wrap .hissu_box p {
+      font-size: 26px;
+      font-size: 2.6rem; }
+  #hissu .hissu_wrap:first-of-type {
+    background: url("../img/point_bg01.jpg") no-repeat;
+    background-size: cover;
+    background-position: center; }
+  #hissu .hissu_wrap:nth-of-type(2) {
+    background: url("../img/point_bg02.jpg") no-repeat;
+    background-size: cover;
+    background-position: center; }
+    #hissu .hissu_wrap:nth-of-type(2) .hissu_box {
+      margin-left: inherit;
+      margin-right: auto; }
+      #hissu .hissu_wrap:nth-of-type(2) .hissu_box .hissu_num {
+        left: inherit;
+        right: -160px; }
+  #hissu .hissu_wrap:last-of-type {
+    background: url("../img/point_bg03.jpg") no-repeat;
+    background-size: cover;
+    background-position: center; }
+
+#voice {
+  padding-top: 50px; }
+  #voice figure {
+    line-height: 0; }
+  #voice .voice_wrap {
+    background-color: #e4bf96;
+    padding: 75px 0; }
+  #voice h2 {
+    margin-bottom: 80px; }
+  #voice .voice_box {
+    width: 1600px;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 40px; }
+    #voice .voice_box figure {
+      width: 47%; }
+    #voice .voice_box .voice_txt {
+      width: 49%;
+      color: #fff; }
+      #voice .voice_box .voice_txt h3 {
+        font-size: 40px;
+        font-size: 4rem;
+        margin-bottom: 30px;
+        line-height: 1.6; }
+      #voice .voice_box .voice_txt p {
+        font-size: 26px;
+        font-size: 2.6rem; }
+  #voice .voice_info {
+    width: 1400px;
+    max-width: 90%;
+    margin: auto;
+    background: #fff;
+    padding: 45px 0 100px;
+    text-align: center; }
+    #voice .voice_info .voice_note {
+      color: #88703e;
+      font-size: 58px;
+      font-size: 5.8rem;
+      margin-bottom: 50px;
+      line-height: 1.8; }
+    #voice .voice_info p {
+      font-size: 30px;
+      font-size: 3rem; }
+
+#shop .shop_wrap {
+  width: 1300px;
+  max-width: 90%;
+  margin: 80px auto; }
+#shop h2 {
+  line-height: 3; }
+#shop dl {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  font-size: 3rem;
+  margin-bottom: 30px; }
+  #shop dl dt {
+    width: 25%;
+    border-bottom: 1px dashed #7f5d29;
+    padding: 15px 0; }
+  #shop dl dd {
+    width: 75%;
+    border-bottom: 1px dashed #7f5d29;
+    padding: 15px 0; }
+#shop .gmap {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 100px; }
+#shop .ggmap iframe,
+#shop .ggmap object,
+#shop .ggmap embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+#contact {
+  padding: 50px 0;
+  background: #f5f4f2; }
+  #contact h2 {
+    color: #8ba600;
+    font-size: 58px;
+    font-size: 5.8rem;
+    line-height: 1.2;
+    margin-bottom: 30px; }
+
+footer {
+  margin-bottom: 200px; }
+  footer .copy {
+    text-align: center;
+    font-size: 16px; }
+
+.cv {
+  width: 100%;
+  background-color: #8ba600;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: fixed;
+  bottom: 0; }
+  .cv .cv_flex {
+    display: flex;
+    justify-content: center; }
+  .cv .cv_btn {
+    margin: 0 1%; }
+  .cv p {
+    color: #fff;
+    font-size: 16px;
+    font-size: 1.6rem;
+    text-align: center;
+    letter-spacing: initial; }
+
+@media screen and (max-width: 1440px) {
+  h2 {
+    max-width: 90%;
+    margin: auto; }
+
+  #intoro .intoro_wrap .intoro_box h3 {
+    font-size: 30px;
+    font-size: 3rem; }
+    #intoro .intoro_wrap .intoro_box h3 span {
+      font-size: 50px;
+      font-size: 5rem; }
+  #intoro .intoro_wrap .intoro_box p {
+    font-size: 18px;
+    font-size: 1.8rem; }
+
+  #hissu .hissu_wrap .hissu_box h3 {
+    font-size: 30px;
+    font-size: 3rem; }
+    #hissu .hissu_wrap .hissu_box h3 span {
+      font-size: 50px;
+      font-size: 5rem; }
+  #hissu .hissu_wrap .hissu_box p {
+    font-size: 18px;
+    font-size: 1.8rem; } }
+@media screen and (max-width: 1024px) {
+  #step .step_info {
+    font-size: 24px;
+    font-size: 2.4rem; }
+
+  #voice .voice_box .voice_txt h3 {
+    font-size: 30px;
+    font-size: 3rem; }
+    #voice .voice_box .voice_txt h3 img {
+      width: 150px; }
+  #voice .voice_box .voice_txt p {
+    font-size: 20px;
+    font-size: 2rem; }
+  #voice .voice_info {
+    padding: 45px 5% 60px; }
+    #voice .voice_info .voice_txt2 {
+      max-width: 90%;
+      margin: auto; }
+    #voice .voice_info .voice_note {
+      font-size: 30px;
+      font-size: 3rem;
+      margin-bottom: 20px; }
+    #voice .voice_info p {
+      font-size: 20px;
+      font-size: 2rem; } }
+@media screen and (max-width: 768px) {
+  header h1 {
+    width: 20%; }
+
+  #reason {
+    position: relative;
+    text-align: center;
+    margin-bottom: 90px; }
+    #reason h2 {
+      margin-bottom: 20px; }
+    #reason .reason_txt1 {
+      width: 90%;
+      margin: auto;
+      font-size: 18px;
+      font-size: 1.8rem;
+      position: static;
+      -webkit-transform: inherit;
+      transform: inherit;
+      text-align: center; }
+    #reason .reason_txt2 {
+      width: 90%;
+      margin: auto;
+      font-size: 24px;
+      font-size: 2.4rem; }
+
+  #intoro .intoro_wrap {
+    padding-top: 100px;
+    padding-bottom: 70px; }
+    #intoro .intoro_wrap .intoro_box {
+      width: 90%;
+      padding: 14% 5%; }
+      #intoro .intoro_wrap .intoro_box .intoro_num {
+        width: 130px;
+        top: -45px;
+        left: 0; }
+      #intoro .intoro_wrap .intoro_box h3 {
+        font-size: 18px;
+        font-size: 1.8rem;
+        margin-bottom: 40px; }
+        #intoro .intoro_wrap .intoro_box h3 span {
+          font-size: 24px;
+          font-size: 2.4rem; }
+      #intoro .intoro_wrap .intoro_box p {
+        font-size: 16px;
+        font-size: 1.6rem; }
+    #intoro .intoro_wrap:nth-of-type(2) .intoro_box .intoro_num {
+      left: inherit;
+      right: 0; }
+
+  .price .price_img {
+    margin: auto;
+    margin-top: -9%;
+    padding-bottom: 80px; }
+
+  #step h2 {
+    margin-bottom: 40px; }
+  #step .step_box {
+    margin-bottom: 50px;
+    display: block; }
+    #step .step_box figure {
+      width: 100%; }
+    #step .step_box .step_txt {
+      width: 100%; }
+      #step .step_box .step_txt h3 {
+        font-size: 24px;
+        font-size: 2.4rem;
+        margin-bottom: 10px; }
+      #step .step_box .step_txt p {
+        font-size: 16px;
+        font-size: 1.6rem; }
+  #step .step_info {
+    font-size: 18px;
+    font-size: 1.8rem;
+    padding: 5%; }
+
+  #only {
+    padding: 70px 0 0; }
+    #only h2 {
+      font-size: 18px;
+      font-size: 1.8rem; }
+
+  #hissu h2 {
+    margin-bottom: 30px; }
+  #hissu .hissu_wrap {
+    padding-top: 100px;
+    padding-bottom: 70px; }
+    #hissu .hissu_wrap .hissu_box {
+      width: 90%;
+      padding: 14% 5%; }
+      #hissu .hissu_wrap .hissu_box .hissu_num {
+        width: 130px;
+        top: -45px;
+        left: 0; }
+      #hissu .hissu_wrap .hissu_box h3 {
+        font-size: 18px;
+        font-size: 1.8rem;
+        margin-bottom: 20px; }
+        #hissu .hissu_wrap .hissu_box h3 span {
+          font-size: 24px;
+          font-size: 2.4rem; }
+      #hissu .hissu_wrap .hissu_box p {
+        font-size: 16px;
+        font-size: 1.6rem; }
+    #hissu .hissu_wrap:nth-of-type(2) .hissu_box .hissu_num {
+      left: inherit;
+      right: 0; }
+
+  #voice .voice_wrap {
+    background-color: #e4bf96;
+    padding: 75px 0; }
+  #voice h2 {
+    margin-bottom: 80px; }
+  #voice .voice_box {
+    display: block;
+    margin-bottom: 50px; }
+    #voice .voice_box figure {
+      width: 100%; }
+    #voice .voice_box .voice_txt {
+      width: 100%; }
+      #voice .voice_box .voice_txt h3 {
+        font-size: 24px;
+        font-size: 2.4rem;
+        margin-bottom: 30px; }
+      #voice .voice_box .voice_txt p {
+        font-size: 16px;
+        font-size: 1.6rem; }
+  #voice .voice_info .voice_txt2 {
+    max-width: 90%;
+    margin: auto; }
+  #voice .voice_info .voice_note {
+    font-size: 20px;
+    font-size: 2rem;
+    margin-bottom: 20px; }
+  #voice .voice_info p {
+    font-size: 16px;
+    font-size: 1.6rem; }
+
+  #shop .shop_wrap {
+    margin: 80px auto 30px; }
+  #shop dl {
+    display: block;
+    flex-wrap: nowrap;
+    font-size: 16px;
+    font-size: 1.6rem; }
+    #shop dl dt {
+      width: 50%;
+      border-bottom: 1px dashed #ccc; }
+    #shop dl dd {
+      width: 100%; }
+
+  #contact h2 {
+    font-size: 18px;
+    font-size: 1.8rem; }
+
+  footer .copy {
+    font-size: 12px; }
+
+  .cv .cv_btn {
+    margin: 0 1%; }
+  .cv p {
+    font-size: 14px;
+    font-size: 1.4rem; } }

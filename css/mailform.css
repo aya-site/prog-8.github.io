@@ -1,0 +1,335 @@
+@charset "utf-8";
+
+
+form#mail_form {
+	width: 960px;
+    max-width: 100%;
+	margin: auto;
+}
+
+form#mail_form dl {
+	width: 90%;
+	margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form#mail_form dl dt {
+	width: 30%;
+	border-top: 1px solid #cccccc;
+	padding: 20px 0;
+	text-align: left;
+    color: #8ba600;
+}
+
+form#mail_form dl dd {
+	width: 70%;
+	border-top: 1px solid #cccccc;
+	padding: 20px 0 20px 5%;
+}
+
+form#mail_form dl dt:first-child,
+form#mail_form dl dt:first-child+dd {
+	border: none;
+}
+
+form#mail_form dl dt span {
+	display: block;
+	font-size: 85%;
+	color: #3377ff;
+    margin-right: 10px;
+}
+
+
+/* -- for JavaScript ここから -------------------------------------------------------------------------------- */
+
+form#mail_form dl dt span.required,
+form#mail_form dl dt span.optional {
+	display: inline-block;
+	float: left;
+	color: #ffffff;
+	line-height: 1;
+	padding: 8px 9px;
+	border-radius: 5px;
+}
+
+form#mail_form dl dt span.required {
+	background: #e60012;
+	border: 1px solid #e60012;
+}
+
+form#mail_form dl dt span.optional {
+	background-color: #a0a0a0;
+	border: 1px solid #a0a0a0;
+}
+
+form#mail_form dl dd span.error_blank,
+form#mail_form dl dd span.error_format,
+form#mail_form dl dd span.error_match {
+	display: block;
+	color: #ff0000;
+	margin-top: 3px;
+}
+
+
+span.loading {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border-top: 5px solid rgba( 255, 255, 255, 0.2 );
+	border-right: 5px solid rgba( 255, 255, 255, 0.2 );
+	border-bottom: 5px solid rgba( 255, 255, 255, 0.2 );
+	border-left: 5px solid #ffffff;
+	-webkit-transform: translateZ( 0 );
+	-ms-transform: translateZ( 0 );
+	transform: translateZ( 0 );
+	-webkit-animation: load-circle 1.0s linear infinite;
+	animation: load-circle 1.0s linear infinite;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -30px;
+	margin-left: -30px;
+}
+
+@-webkit-keyframes load-circle {
+	0% {
+		-webkit-transform: rotate( 0deg );
+		transform: rotate( 0deg );
+	}
+	100% {
+		-webkit-transform: rotate( 360deg );
+		transform: rotate( 360deg );
+	}
+}
+
+@keyframes load-circle {
+	0% {
+		-webkit-transform: rotate( 0deg );
+		transform: rotate( 0deg );
+	}
+	100% {
+		-webkit-transform: rotate( 360deg );
+		transform: rotate( 360deg );
+	}
+}
+
+
+/* -- for JavaScript ここまで -------------------------------------------------------------------------------- */
+
+
+form#mail_form input[type="text"],
+form#mail_form input[type="email"],
+form#mail_form input[type="tel"] {
+    width: 100%;
+	max-width: 100%;
+	height: 2em;
+	padding: 2px 2%;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background: #fafafa;
+	-webkit-appearance: none;
+	font-size: 100%;
+	font-family: inherit;
+	margin-top: 7px;
+}
+
+form#mail_form input[type="text"]:focus,
+form#mail_form input[type="email"]:focus,
+form#mail_form input[type="tel"]:focus,
+form#mail_form textarea:focus {
+	box-shadow: 0px 0px 5px #55ccff;
+	border: 1px solid #55ccff;
+	background: #ffffff;
+}
+
+form#mail_form ul li input[type="radio"],
+form#mail_form ul li input[type="checkbox"] {
+	margin-right: 10px;
+	margin-top: 7px;
+}
+
+form#mail_form ul li:first-child input[type="radio"],
+form#mail_form ul li:first-child input[type="checkbox"] {
+	margin-top: 0px;
+}
+
+form#mail_form select {
+	font-size: 100%;
+	font-family: inherit;
+	margin-top: 10px;
+}
+
+form#mail_form textarea {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	height: 200px;
+	padding: 2px 2%;
+	resize: vertical;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background: #fafafa;
+	-webkit-appearance: none;
+	font-size: 100%;
+	font-family: inherit;
+}
+
+
+form#mail_form ul {
+	list-style-type: none;
+}
+
+form#mail_form ul li label:hover {
+	cursor: pointer;
+}
+
+form#mail_form input#name_1,
+form#mail_form input#name_2
+ {
+	width: 100%;
+}
+
+form#mail_form input#schedule1,
+form#mail_form input#schedule2,
+form#mail_form input#schedule3 {
+	width: 48%;
+}
+
+
+
+form#mail_form p#form_submit {
+	width: 90%;
+	margin: 0 auto;
+	padding: 15px 0;
+	border-top: 1px solid #cccccc;
+    text-align: center;
+}
+
+form#mail_form input[type="button"] {
+	padding: 25px 150px;
+	vertical-align: middle;
+	line-height: 1;
+	background:  #8ba600;
+	border: 1px solid #8ba600;
+	border-radius: 50px;
+	color: #ffffff;
+	font-family: inherit;
+	-webkit-appearance: none;
+	font-size: 100%;
+    box-shadow: 0px 14px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+form#mail_form input[type="button"]:hover {
+	cursor: pointer;
+	background: #7f5d29;
+	border: 1px solid #7f5d29;
+    box-shadow: 0px 9px 2px 0px rgba(0, 0, 0, 0.1);
+    transform: translateY(3px);
+}
+
+form#mail_form input#form_submit_button {
+	
+}
+form#mail_form span.example {
+    display: block;
+    color: #888;
+}
+
+form#mail_form .datetime {
+    
+}
+
+form#mail_form input#time1,
+form#mail_form input#time2,
+form#mail_form input#time3 {
+	width: 48%;
+}
+input::placeholder {
+  color: #ccc;
+}
+
+
+/* -- responsive ----------------------------------------------------------------------------------------------------------------- */
+
+/* 1000pixel start */
+@media screen and ( max-width: 768px ) {
+
+form#mail_form {
+	width: 95%;
+}
+
+form#mail_form dl {
+    display: block;
+}
+form#mail_form dl dt {
+	width: 100%;
+    padding-bottom: 0;
+}
+
+form#mail_form dl dd {
+	width: 100%;
+	border-top: none;
+	padding: 20px 0;
+}
+form#mail_form input#schedule1,
+form#mail_form input#schedule2,
+form#mail_form input#schedule3 {
+	width: 100%;
+}
+form#mail_form input#time1,
+form#mail_form input#time2,
+form#mail_form input#time3 {
+	width: 100%;
+}
+    
+
+
+/* -- for JavaScript ここから -------------------------------------------------------------------------------- */
+
+form#mail_form dl dt span.required,
+form#mail_form dl dt span.optional {
+	margin-right: 1em;
+	margin-bottom: 2em;
+}
+
+
+/* -- for JavaScript ここまで -------------------------------------------------------------------------------- */
+
+form#mail_form input[type="text"],
+form#mail_form input[type="email"],
+form#mail_form input[type="tel"] {
+	margin-top: 0px;
+}
+
+form#mail_form input#form_submit_button {
+	margin-left: 0;
+}
+
+form#mail_form select {
+	margin-top: 0;
+}
+
+form#mail_form input#phone,
+form#mail_form input#schedule {
+	width: 50%;
+}
+
+}
+/* 1000pixel end */
+
+@media screen and ( max-width: 768px ) {
+    form#mail_form .datetime {
+        display: block;
+    }
+    form#mail_form input#time1,
+    form#mail_form input#time2,
+    form#mail_form input#time3 {
+        margin-top: 20px;
+    } 
+    form#mail_form input[type="button"] {
+        padding: 25px 100px;
+    }    
+}
+

@@ -1,0 +1,140 @@
+@charset "utf-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #7f5d29;
+  min-height: 100%;
+  width: 100%;
+  line-height: 1.8;
+  letter-spacing: .2em;
+  font-size: 2rem; }
+
+
+div#thanks {
+	width: 960px;
+	margin: 50px auto;
+	padding: 30px 0;
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 7px;
+	box-shadow: 0 0 7px rgba( 0, 0, 0, 0.2 );
+}
+
+div#thanks h1,
+div#thanks h2 {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 135%;
+	font-weight: bold;
+	border-bottom: 1px solid #454545;
+}
+
+div#thanks h2 {
+	margin-top: 3em;
+}
+
+div#thanks p {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 2em;
+}
+
+div#thanks dl {
+	width: 90%;
+	margin: 0 auto 3em;
+}
+
+div#thanks dl dt {
+	margin-top: 2em;
+}
+
+#thanks .to_top {
+    margin: 50px auto;
+    text-align: center;
+}
+#thanks .to_top a {
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: #fff;
+}
+#thanks .to_top a:hover {
+    background: #333;
+    color: #fff;
+}
+
+header {
+    margin: 50px auto;
+    text-align: center;
+}
+header .title-area {
+    font-size: 48px;
+    font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+}
+
+
+
+
+/* -- responsive ------------------------------------------- */
+
+/* 1000pixel start */
+@media screen and ( max-width: 1000px ) {
+
+div#thanks {
+	width: 95%;
+}
+
+}
+/* 1000pixel end */
+
+
+
+
